@@ -7,6 +7,8 @@
  * Made By MaterializeCSS.com
  */
 
+ .navbar-fixed { z-index: 999; }
+
 nav ul a,
 nav .brand-logo {
   color: #fcfcfc;
@@ -20,6 +22,10 @@ p {
   color: #fcfcfc;
 }
 
+.sidenav li:hover {
+  background-color: #e53d00;
+}
+
 .parallax-container {
   min-height: 380px;
   line-height: 0;
@@ -29,6 +35,13 @@ p {
 
 .parallax-container .section {
   width: 100%;
+}
+
+@media only screen and (max-width: 500px) {
+  nav ul a,
+  nav .brand-logo {
+    font-size: 13px;
+  }
 }
 
 @media only screen and (min-width: 900px) {
@@ -44,13 +57,6 @@ p {
   }
   #index-banner .section {
     top: 10%;
-  }
-}
-
-@media only screen and (max-width: 412px) {
-  nav ul a,
-  nav .brand-logo {
-    font-size: 15px;
   }
 }
 
